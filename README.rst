@@ -1,3 +1,4 @@
 Message
 =============================================
-Implements messaging system
+Implements messaging system.
+Currently under heavy development.
