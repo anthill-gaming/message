@@ -156,8 +156,7 @@ class Message(InternalAPIMixin, db.Model):
 
     @as_future
     def add_reaction(self, user_id, value):
-        # TODO: message_id = self.id
-        pass
+        return MessageReaction.create(value=value, user_id=user_id, message_id=self.id)
 
 
 class TextMessage(Message):
